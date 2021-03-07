@@ -5680,7 +5680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294367354}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 14.02, y: -26.09, z: -19.01}
+  m_LocalPosition: {x: 14.02, y: -21.77, z: -19.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 227709391}
@@ -5698,7 +5698,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9975966, g: 1, b: 0.9009434, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 65.08
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6228,17 +6228,17 @@ PrefabInstance:
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09853761
+      value: 0.09853764
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 7.088138e-15
+      value: -0.000000029657281
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.1444313e-14
+      value: 0.0000000029366294
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674770783070, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
@@ -7984,7 +7984,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9975966, g: 1, b: 0.9009434, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 2
   m_Range: 65.08
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8064,7 +8064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830171311}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.64, y: -21.34, z: -4.37}
+  m_LocalPosition: {x: 17.64, y: -21.34, z: -7.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 227709391}
@@ -8708,7 +8708,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9869735, b: 0.8820755, a: 1}
-  m_Intensity: 10
+  m_Intensity: 20
   m_Range: 77.27645
   m_SpotAngle: 117.875885
   m_InnerSpotAngle: 21.80208
@@ -9077,8 +9077,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9975966, g: 1, b: 0.9009434, a: 1}
-  m_Intensity: 1
-  m_Range: 1.5
+  m_Intensity: 2
+  m_Range: 65
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
