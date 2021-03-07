@@ -73,7 +73,7 @@ public class ThrowBooksFromShelves : MonoBehaviour
             }
         }
 
-        if (currentTarget == null && targets != null)
+        if (currentTarget == null && targets.Count >= 1)
         {
             currentTarget = targets[0];
         }
