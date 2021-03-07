@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class ThrowBooksFromShelves : MonoBehaviour
 {
-    GameObject[] enemies;
-    [SerializeField] List<GameObject> targets = new List<GameObject>();
-    [SerializeField] GameObject currentTarget;
+    List<GameObject> enemies = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
     }
 
     // Update is called once per frame
@@ -25,16 +23,16 @@ public class ThrowBooksFromShelves : MonoBehaviour
     {
         if (collider.tag == "Book")
         {
-            if (currentTarget != null)
+            if (EnemyManager.instance.currentTarget != null)
             {
                 // should be a determined path to target, not physics
-                Vector3 direction = currentTarget.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 80f + Vector3.up * 70f);
+                Vector3 direction = EnemyManager.instance.currentTarget.transform.position - collider.transform.position;
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 100f + Vector3.up * 100f);
             }
             else
             {
                 Vector3 direction = this.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 80f + Vector3.up * 70f);
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 100f + Vector3.up * 100f);
             }
         }
     }
@@ -45,13 +43,13 @@ public class ThrowBooksFromShelves : MonoBehaviour
         {
             Vector3 screenPoint = Camera.main.WorldToViewportPoint(enemy.transform.position);
             bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
-            if (onScreen && !targets.Contains(enemy))
+            if (onScreen && !EnemyManager.instance.targets.Contains(enemy))
             {
-                targets.Add(enemy);
+                EnemyManager.instance.targets.Add(enemy);
             }
-            else if (!onScreen && targets.Contains(enemy))
+            else if (!onScreen && EnemyManager.instance.targets.Contains(enemy))
             {
-                targets.Remove(enemy);
+                EnemyManager.instance.targets.Remove(enemy);
             }
         }
 
@@ -61,21 +59,21 @@ public class ThrowBooksFromShelves : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Tab))
         {
-            if (currentTarget != null && targets.Count > 1)
+            if (EnemyManager.instance.currentTarget != null && EnemyManager.instance.targets.Count > 1)
             {
-                int indexCurrent = targets.IndexOf(currentTarget);
-                int indexNext = targets.Count > indexCurrent + 1 ? indexCurrent + 1 : 0;
-                currentTarget = targets[indexNext];
+                int indexCurrent = EnemyManager.instance.targets.IndexOf(EnemyManager.instance.currentTarget);
+                int indexNext = EnemyManager.instance.targets.Count > indexCurrent + 1 ? indexCurrent + 1 : 0;
+                EnemyManager.instance.currentTarget = EnemyManager.instance.targets[indexNext];
             }
             else
             {
-                currentTarget = targets[0] != null ? targets[0] : null;
+                EnemyManager.instance.currentTarget = EnemyManager.instance.targets[0] != null ? EnemyManager.instance.targets[0] : null;
             }
         }
 
-        if (currentTarget == null && targets.Count >= 1)
+        if (EnemyManager.instance.currentTarget == null && EnemyManager.instance.targets.Count >= 1)
         {
-            currentTarget = targets[0];
+            EnemyManager.instance.currentTarget = EnemyManager.instance.targets[0];
         }
     }
 }
