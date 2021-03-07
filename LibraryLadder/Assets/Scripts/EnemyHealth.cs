@@ -34,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        transform.LookAt(EnemyManager.instance.player.transform);
+        transform.LookAt(Camera.main.transform);
     }
 
     void OnCollisionEnter(Collision coll)

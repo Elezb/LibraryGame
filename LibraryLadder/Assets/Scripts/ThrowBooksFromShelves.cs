@@ -21,6 +21,8 @@ public class ThrowBooksFromShelves : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+        //if (Input.GetKeyDown(KeyCode.F))
+        //{
         if (collider.tag == "Book")
         {
             if (EnemyManager.instance.currentTarget != null)
@@ -35,6 +37,7 @@ public class ThrowBooksFromShelves : MonoBehaviour
                 collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 100f + Vector3.up * 100f);
             }
         }
+        //  }
     }
 
     void AddVisibleEnemiesToTargetList()
