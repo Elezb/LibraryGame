@@ -25,18 +25,16 @@ public class ThrowBooksFromShelves : MonoBehaviour
     {
         if (collider.tag == "Book")
         {
-            print("collision");
             if (currentTarget != null)
             {
                 // should be a determined path to target, not physics
                 Vector3 direction = currentTarget.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 60f);
-                print("throw to target");
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 80f + Vector3.up * 70f);
             }
             else
             {
                 Vector3 direction = this.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 60f);
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 80f + Vector3.up * 70f);
             }
         }
     }
