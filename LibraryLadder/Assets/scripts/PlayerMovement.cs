@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
    public float turnSmoothTime = 0.1f;
    float turnSmoothVelocity;
 
+    public List<Shelf> possibleShelfs = new List<Shelf>();
+   Shelf closestShelf;
+
+
    void Update()
    {
        Move();
@@ -33,5 +37,37 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+   }
+
+   void LadderToShelf()
+   {
+       if(Input.GetButton("Ladder"))
+       {
+          Shelf targetShelf = ClosestShelf(); 
+          if(targetShelf!=null)
+          {
+                Debug.Log("i should put my ladder here");
+          }
+          else
+          {
+              Debug.Log("no Shelf in reach");
+          }
+       }
+
+   }
+
+   Shelf ClosestShelf()
+   {
+       Shelf closestShelf = null;
+       int currentClosestDistance=1000;
+       for(int i = 0;i<possibleShelfs.Count;i++)
+       {
+           if(Vector3.Distance(transform.position,possibleShelfs[i].transform.position) < currentClosestDistance)
+           {
+               closestShelf=possibleShelfs[i];
+           }
+
+       }
+       return closestShelf;
    }
 }
