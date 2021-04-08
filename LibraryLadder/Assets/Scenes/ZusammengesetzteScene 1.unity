@@ -327,6 +327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &78905508
@@ -496,6 +501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &120124168 stripped
@@ -526,17 +536,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e6a2cacf7d39ea746a375c82d455a6a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000036437038
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a2cacf7d39ea746a375c82d455a6a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.87
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a2cacf7d39ea746a375c82d455a6a7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00000012757556
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a2cacf7d39ea746a375c82d455a6a7,
         type: 3}
@@ -626,6 +636,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7807538432633192378, guid: e6a2cacf7d39ea746a375c82d455a6a7, type: 3}
+--- !u!135 &145747201
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145747197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.014
+  m_Center: {x: -1.15443544e-10, y: -2.1034518e-11, z: 0.0041792314}
 --- !u!4 &160010989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2844062447469460155, guid: 852afb2f506274d4e9ff20da01717cad,
@@ -713,6 +736,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -810,6 +838,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &201632809
@@ -823,6 +856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: books_aussenLaying (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554174281052165931, guid: b838270c852186148bb7053a4d293d1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186419114778152337, guid: b838270c852186148bb7053a4d293d1e,
         type: 3}
@@ -978,6 +1016,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1 &227709390
@@ -1035,6 +1078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -1190,6 +1238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &296556166 stripped
@@ -1279,6 +1332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -1442,6 +1500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -1713,6 +1776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &422433529 stripped
@@ -1817,6 +1885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -2011,6 +2084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -2381,7 +2459,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 5000
   field of view: 40
   orthographic: 0
@@ -2426,6 +2504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -2581,6 +2664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3231011645114573989, guid: 852afb2f506274d4e9ff20da01717cad,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -2735,6 +2823,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &790863338
@@ -2748,6 +2841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -2902,6 +3000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -3101,6 +3204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3196,6 +3304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -3366,6 +3479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -3553,6 +3671,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3732,6 +3855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -4011,6 +4139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4201,6 +4334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4371,6 +4509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4525,6 +4668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &1056405489 stripped
@@ -4604,6 +4752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3899006707754134922, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -4889,6 +5042,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &1093840675 stripped
@@ -4913,6 +5071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -5068,6 +5231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &1108884368
@@ -5081,6 +5249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -5356,6 +5529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5570,6 +5748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -6042,6 +6225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &1418264146
@@ -6055,6 +6243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -6146,6 +6339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6228,32 +6426,42 @@ PrefabInstance:
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09853764
+      value: 0.09853761
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000029657281
+      value: 0.000000006067147
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000029366294
+      value: -0.00000006127217
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754055674203401118, guid: c820ac4ad5a355943bdb001168eefca1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99513334
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674770783070, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.080420345
+      value: 0.08042034
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674770783070, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -9.395652e-16
+      value: 0.0000000023796176
       objectReference: {fileID: 0}
     - target: {fileID: 7754055674770783070, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.1645339e-14
+      value: -0.000000029493906
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754055674770783070, guid: c820ac4ad5a355943bdb001168eefca1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9967611
       objectReference: {fileID: 0}
     - target: {fileID: 7754055675806158708, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
@@ -6328,17 +6536,22 @@ PrefabInstance:
     - target: {fileID: 7754055675960318787, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000042932324
+      value: 0.0000000045699338
       objectReference: {fileID: 0}
     - target: {fileID: 7754055675960318787, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.6808702e-10
+      value: -0.000000004699149
       objectReference: {fileID: 0}
     - target: {fileID: 7754055675960318787, guid: c820ac4ad5a355943bdb001168eefca1,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.06232441
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754055675960318787, guid: c820ac4ad5a355943bdb001168eefca1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.998056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c820ac4ad5a355943bdb001168eefca1, type: 3}
@@ -6359,6 +6572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -6456,6 +6674,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 696618975}
+    - target: {fileID: 5179735223956060964, guid: 4a5ceb8ec40989f47b91648b57ee9da3,
+        type: 3}
+      propertyPath: endOfPathInstruction
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5179735223956060966, guid: 4a5ceb8ec40989f47b91648b57ee9da3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6613,12 +6836,17 @@ PrefabInstance:
     - target: {fileID: 7964832661377993689, guid: 9fa9a151f78e8864f9b1907e0e69a52a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 60
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964832661377993689, guid: 9fa9a151f78e8864f9b1907e0e69a52a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 60
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964832661377993689, guid: 9fa9a151f78e8864f9b1907e0e69a52a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fa9a151f78e8864f9b1907e0e69a52a, type: 3}
@@ -6703,6 +6931,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -6977,6 +7210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7152,6 +7390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7305,6 +7548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -7653,6 +7901,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &1738997208
@@ -7837,6 +8090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BookModel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
@@ -8393,6 +8651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!4 &1843195664 stripped
@@ -8418,6 +8681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -8663,6 +8931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1 &1886675485
@@ -8861,6 +9134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8949,6 +9227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -9292,6 +9575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9446,6 +9734,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &1978826319
@@ -9459,6 +9752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: books_aussenLaying (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554174281052165931, guid: b838270c852186148bb7053a4d293d1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186419114778152337, guid: b838270c852186148bb7053a4d293d1e,
         type: 3}
@@ -9699,6 +9997,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &2036504385
@@ -9712,6 +10015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -9893,6 +10201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -10109,6 +10422,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: books_aussenLaying (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3554174281052165931, guid: b838270c852186148bb7053a4d293d1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4186419114778152337, guid: b838270c852186148bb7053a4d293d1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10192,6 +10510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -10277,6 +10600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books_aussen (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10360,6 +10688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}
@@ -10450,6 +10783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: books_aussenLaying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554174281052165931, guid: b838270c852186148bb7053a4d293d1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186419114778152337, guid: b838270c852186148bb7053a4d293d1e,
         type: 3}
@@ -10611,6 +10949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookModel
       objectReference: {fileID: 0}
+    - target: {fileID: 3185156640093609985, guid: 852afb2f506274d4e9ff20da01717cad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852afb2f506274d4e9ff20da01717cad, type: 3}
 --- !u!1001 &4556090454016966418
@@ -10624,6 +10967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Books_aussen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779850064457083770, guid: b3d3054301439b3478c88d4689e78424,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557477037002191296, guid: b3d3054301439b3478c88d4689e78424,
         type: 3}

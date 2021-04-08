@@ -6,6 +6,12 @@ public class Shelf : MonoBehaviour
 {
     public Vector3 ladderOnShelfOffset;
     public Vector3 ladderOnShelfRotation;
+    public PathCreation.PathCreator pathCreator;
+
+    private void Start()
+    {
+        pathCreator = GetComponent<PathCreation.PathCreator>();
+    }
     void OnTriggerEnter(Collider collider)
     {
         Debug.Log("du bist in meiner triggerzone");

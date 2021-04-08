@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PathCreation;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform ladder;
     public Transform playerModel;
     public float speed;
-    
-   
+    public PathCreator currentPath;
+    float distanceTravelled;
+    public EndOfPathInstruction endOfPathInstruction;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -57,18 +59,22 @@ public class PlayerMovement : MonoBehaviour
     {
         float vertical = Input.GetAxisRaw("Vertical");
         float horizontal = Input.GetAxisRaw("Horizontal");
-        Vector3 playerDirection = new Vector3(0, vertical,0).normalized;
-        Vector3 ladderDirection = new Vector3(horizontal, 0, 0).normalized;
+        Vector3 playerDirection = ((Vector3.up)*vertical).normalized;
+        distanceTravelled += horizontal * Time.deltaTime*.01f;
+       
 
         if (playerDirection.magnitude > 0.1f)
         {
+           
+            
             transform.position +=  playerDirection* speed *Time.deltaTime;
         }
 
-        if (ladderDirection.magnitude > 0.1f) 
-        {
-            ladder.GetComponent<Rigidbody>().AddForce(currentShelf.localToWorldMatrix*ladderDirection*speed*400* Time.deltaTime);
-        }
+      
+           // ladder.GetComponent<Rigidbody>().AddForce(currentShelf.localToWorldMatrix*ladderDirection*speed*400* Time.deltaTime);
+            ladder.transform.position = currentPath.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
+            //ladder.transform.rotation = currentPath.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
+        
     }
 
    void LadderToShelf()
@@ -81,13 +87,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 OnLadder = true;
 
-                Vector3 direction = new Vector3(-Mathf.Pow(transform.position.x, 2) / targetShelf.transform.right.x, 0, transform.position.z);
-                //Schnittpunkt berechnung
-
                 ladder.parent = null;
-                
-                transform.position = new Vector3(targetShelf.transform.position.x + targetShelf.ladderOnShelfOffset.x, targetShelf.transform.position.y + targetShelf.ladderOnShelfOffset.y, targetShelf.transform.position.z + targetShelf.ladderOnShelfOffset.z);
-                MoveLadderTo(targetShelf.transform.position + targetShelf.ladderOnShelfOffset, Quaternion.Euler(targetShelf.ladderOnShelfRotation));
+                currentPath = targetShelf.pathCreator;
+                transform.position =currentPath.path.GetClosestPointOnPath(transform.position);
+                distanceTravelled = currentPath.path.GetClosestDistanceAlongPath(transform.position);
+                MoveLadderTo(currentPath.path.GetClosestPointOnPath(transform.position), currentPath.path.GetRotationAtDistance(distanceTravelled)) ;
+                //transform.rotation = Quaternion.LookRotation(ladder.position + transform.up * 1.94f, transform.up);
                 transform.parent = ladder;
                 Debug.Log("i should put my ladder here");
             }
