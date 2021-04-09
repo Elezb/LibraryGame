@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
    void LadderToShelf()
    {
-       if(Input.GetButton("Fire1"))
+       if(Input.GetButton("Fire1") && possibleShelfs.Count!=0)
        {
           Shelf targetShelf = ClosestShelf();
             currentShelf = targetShelf.transform;
