@@ -25,8 +25,13 @@ public class PlayerMovement : MonoBehaviour
 
     bool OnLadder;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
-   void Update()
+    void Update()
    {
         if (!OnLadder)
         {
@@ -62,8 +67,8 @@ public class PlayerMovement : MonoBehaviour
     {
         float vertical = Input.GetAxisRaw("Vertical");
         float horizontal = Input.GetAxisRaw("Horizontal");
-        Vector3 playerDirection = ((Vector3.up)*vertical).normalized;
-        distanceTravelled += horizontal * Time.deltaTime*.01f;
+        Vector3 playerDirection = ((Vector3.up+transform.forward*.21f)*vertical).normalized;
+        distanceTravelled += horizontal *1.2f* Time.deltaTime;
        
 
         if (playerDirection.magnitude > 0.1f)
@@ -71,13 +76,15 @@ public class PlayerMovement : MonoBehaviour
            
             
             transform.position +=  playerDirection* speed *Time.deltaTime;
+            
         }
 
       
            // ladder.GetComponent<Rigidbody>().AddForce(currentShelf.localToWorldMatrix*ladderDirection*speed*400* Time.deltaTime);
             ladder.transform.position = currentPath.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
-            //ladder.transform.rotation = currentPath.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
-        
+        MoveLadderTo(currentPath.path.GetClosestPointOnPath(transform.position), rotationToShelf());
+        //ladder.transform.rotation = currentPath.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
+
     }
 
    void LadderToShelf()
@@ -92,10 +99,11 @@ public class PlayerMovement : MonoBehaviour
 
                 ladder.parent = null;
                 currentPath = targetShelf.pathCreator;
-                transform.position =currentPath.path.GetClosestPointOnPath(transform.position);
+               
+                transform.rotation = Quaternion.LookRotation((currentShelf.position - ladder.position).normalized, currentPath.path.GetNormalAtDistance(distanceTravelled));
+                transform.position = currentPath.path.GetClosestPointOnPath(transform.position) - transform.forward*150;
                 distanceTravelled = currentPath.path.GetClosestDistanceAlongPath(transform.position);
-                MoveLadderTo(currentPath.path.GetClosestPointOnPath(transform.position), currentPath.path.GetRotationAtDistance(distanceTravelled)) ;
-                //transform.rotation = Quaternion.LookRotation(ladder.position + transform.up * 1.94f, transform.up);
+                MoveLadderTo(currentPath.path.GetClosestPointOnPath(transform.position), rotationToShelf()) ;
                 transform.parent = ladder;
                 Debug.Log("i should put my ladder here");
             }
@@ -111,6 +119,18 @@ public class PlayerMovement : MonoBehaviour
 
    }
 
+    Quaternion rotationToShelf() 
+    {
+        Quaternion targetRotation = Quaternion.identity;
+
+        
+        targetRotation = Quaternion.LookRotation((currentShelf.position- ladder.position ).normalized, currentPath.path.GetNormalAtDistance(distanceTravelled));
+
+
+        return targetRotation;
+    }
+
+
     void MoveLadderTo(Vector3 targetPosition, Quaternion targetRotation) 
     {
         ladder.position = targetPosition;
@@ -121,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
    Shelf ClosestShelf()
    {
        Shelf closestShelf = null;
-       float currentClosestDistance=1000;
+       float currentClosestDistance=Mathf.Infinity;
        for(int i = 0;i<possibleShelfs.Count;i++)
        {
            if(Vector3.Distance(transform.position,possibleShelfs[i].transform.position) < currentClosestDistance)

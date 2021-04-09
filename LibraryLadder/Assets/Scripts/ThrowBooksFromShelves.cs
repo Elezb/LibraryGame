@@ -29,12 +29,12 @@ public class ThrowBooksFromShelves : MonoBehaviour
             {
                 // should be a determined path to target, not physics
                 Vector3 direction = EnemyManager.instance.currentTarget.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 100f + Vector3.up * 100f);
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 150f + Vector3.up * 150f);
             }
             else
             {
                 Vector3 direction = this.transform.position - collider.transform.position;
-                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 100f + Vector3.up * 100f);
+                collider.gameObject.GetComponent<Rigidbody>().AddForce(direction * 150f + Vector3.up * 150f);
             }
         }
         //  }

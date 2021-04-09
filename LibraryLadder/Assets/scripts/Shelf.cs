@@ -10,33 +10,41 @@ public class Shelf : MonoBehaviour
 
     private void Start()
     {
-        pathCreator = GetComponent<PathCreation.PathCreator>();
+        if (pathCreator == null)
+        {
+            pathCreator = GetComponent<PathCreation.PathCreator>();
+        }
     }
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("du bist in meiner triggerzone");
-        if(collider.TryGetComponent(out PlayerMovement player) && !player.possibleShelfs.Contains(this))
+        if (!collider.CompareTag("Book"))
         {
-            player.possibleShelfs.Add(this);
-        }
-        else
-        {
-            Debug.Log("aber hast kein playermovement script");
+            Debug.Log("du bist in meiner triggerzone");
+            if (collider.TryGetComponent(out PlayerMovement player) && !player.possibleShelfs.Contains(this))
+            {
+                player.possibleShelfs.Add(this);
+            }
+            else
+            {
+                Debug.Log("aber hast kein playermovement script");
+            }
         }
     }
 
     void OnTriggerExit(Collider collider) 
     {
-        Debug.Log("du verlässt in meiner triggerzone");
-        if (collider.TryGetComponent(out PlayerMovement player) && player.possibleShelfs.Contains(this))
+        if (!collider.CompareTag("Book"))
         {
-            player.possibleShelfs.Remove(this);
+            Debug.Log("du verlässt in meiner triggerzone");
+            if (collider.TryGetComponent(out PlayerMovement player) && player.possibleShelfs.Contains(this))
+            {
+                player.possibleShelfs.Remove(this);
+            }
+            else
+            {
+                Debug.Log("aber hast kein playermovement script");
+            }
         }
-        else
-        {
-            Debug.Log("aber hast kein playermovement script");
-        }
-
 
     }
 
